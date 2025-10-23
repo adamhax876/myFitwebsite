@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitAI: Bilingual Fitness & Nutrition Planner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              arabic: ['Tajawal', 'sans-serif'],
+            },
+            colors: {
+              'primary': '#3b82f6', // Blue 500
+              'primary-focus': '#2563eb', // Blue 600
+              'secondary': '#10b981', // Emerald 500
+              'secondary-focus': '#059669', // Emerald 600
+              'dark-bg': '#0f172a', // Slate 900
+              'dark-card': '#1e293b', // Slate 800
+              'dark-text': '#e2e8f0', // Slate 200
+              'light-bg': '#f1f5f9', // Slate 100
+              'light-card': '#ffffff', // White
+              'light-text': '#0f172a', // Slate 900
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.26.0",
+    "firebase/": "https://aistudiocdn.com/firebase@^12.4.0/",
+    "firebase-functions/": "https://aistudiocdn.com/firebase-functions@^6.6.0/",
+    "firebase-admin": "https://aistudiocdn.com/firebase-admin@^13.5.0",
+    "@sendgrid/mail": "https://aistudiocdn.com/@sendgrid/mail@^8.1.6"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
